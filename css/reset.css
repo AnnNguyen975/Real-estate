@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: "Poppins", sans-serif;
+    --font-heading: "Nunito", sans-serif;
+
+    --dark: #071c1f;
+    --orange: #ff593f;
+    --light-bg: #f1f6f7;
+    --grey-text: #9eabb2;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--font-primary);
+
+    color: var(--dark);
+    background: #ffffff;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button,
+input,
+textarea {
+    font: inherit;
+}

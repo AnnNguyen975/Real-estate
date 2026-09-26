@@ -1,0 +1,415 @@
+
+/* ==================================================
+   FEATURED PROPERTY
+================================================== */
+
+.featured-section {
+    background: #ffffff;
+
+    padding: 70px 20px 75px;
+}
+
+
+.featured-container {
+    width: min(740px, 100%);
+
+    margin: 0 auto;
+}
+
+
+/* ================= HEADER ================= */
+
+.featured-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 35px;
+}
+
+
+/* LEFT */
+
+.featured-title h2 {
+    margin: 0;
+
+    font-size: 27px;
+    line-height: 1.2;
+
+    color: #092126;
+
+    font-weight: 600;
+}
+
+
+.featured-title p {
+    margin-top: 14px;
+
+    color: #98a7aa;
+
+    font-size: 8px;
+    line-height: 1.6;
+}
+
+
+/* ================= TABS ================= */
+
+.property-tabs {
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+.property-tab {
+    position: relative;
+
+    padding: 0 0 7px;
+
+    border: none;
+    background: none;
+
+    color: #8d9da0;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+.property-tab.active {
+    color: #7c898c;
+}
+
+
+.property-tab.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background: #ff5942;
+}
+
+
+
+/* ==================================================
+   PROPERTY GRID
+================================================== */
+
+.property-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+
+/* ================= PROPERTY CARD ================= */
+
+.property-card {
+    position: relative;
+
+    min-width: 0;
+}
+
+
+/* IMAGE */
+
+.property-card .property-image {
+    width: 100%;
+    aspect-ratio: 1.35 / 1;
+
+    background: #c6c6c6;
+
+    overflow: hidden;
+}
+
+
+.property-card .property-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+/* ================= INFO ================= */
+
+.property-info {
+    width: 84%;
+
+    min-height: 88px;
+
+    position: absolute;
+    bottom: 0%;
+    margin-top: -1px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px 0 10px 14px;
+
+    box-shadow:
+        0 8px 20px rgba(10, 30, 35, 0.05);
+}
+
+
+.property-details h3 {
+    margin: 0;
+
+    color: #092126;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+.property-details p {
+    margin-top: 7px;
+
+    color: #a1adaf;
+
+    font-size: 6.5px;
+}
+
+
+.property-details p i {
+    margin-right: 3px;
+
+    color: #ff5942;
+}
+
+
+.property-details strong {
+    display: block;
+
+    margin-top: 10px;
+
+    color: #092126;
+
+    font-size: 9px;
+}
+
+
+.property-card:first-child .property-details strong {
+    color: #ff5942;
+}
+
+
+
+/* ================= ARROW ================= */
+
+.property-arrow {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    width: 42px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eeeeee;
+
+    color: #79878a;
+
+    text-decoration: none;
+
+    font-size: 8px;
+}
+
+
+.property-arrow.active-arrow {
+    background: #ff5942;
+
+    color: #ffffff;
+}
+
+
+
+/* ==================================================
+   EXPLORE BUTTON
+================================================== */
+
+.explore-wrapper {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 34px;
+}
+
+
+.explore-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 34px;
+
+    padding: 0 20px;
+
+    border: 1px solid #ff5942;
+
+    color: #ff5942;
+
+    background: #ffffff;
+
+    font-size: 8px;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.explore-btn:hover {
+    background: #ff5942;
+
+    color: #ffffff;
+}
+
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 768px) {
+
+    .services-container,
+    .featured-container {
+        width: min(600px, 100%);
+    }
+
+
+    /* SERVICES */
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* PROPERTY */
+
+    .featured-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .property-tabs {
+        gap: 30px;
+    }
+}
+
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 500px) {
+
+    /* SERVICES */
+
+    .services-section {
+        padding-top: 50px;
+    }
+
+
+    .services-heading h2 {
+        font-size: 25px;
+    }
+
+
+    .services-heading p br {
+        display: none;
+    }
+
+
+    .services-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 300px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .service-card {
+        height: 200px;
+    }
+
+
+    /* FEATURED PROPERTY */
+
+    .featured-title h2 {
+        font-size: 24px;
+    }
+
+
+    .property-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        max-width: 320px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .property-tabs {
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 0;
+    }
+
+
+    .property-info {
+        min-height: 80px;
+    }
+
+
+    .explore-wrapper {
+        margin-top: 40px;
+    }
+}

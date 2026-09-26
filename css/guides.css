@@ -1,0 +1,450 @@
+/* =========================================
+   GUIDES SECTION
+========================================= */
+
+.guides-section {
+    background: #ffffff;
+    padding: 72px 0 65px;
+}
+
+.section-container {
+    width: min(730px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* ---------- HEADING ---------- */
+
+.section-heading {
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #071c1f;
+    
+    font-style: var(--font-primary);
+    font-size: 36px;
+    line-height: 1.18;
+    font-weight: 700;
+
+    font-weight: 700;
+    letter-spacing: -0.7px;
+}
+
+.section-heading p {
+    margin-top: 12px;
+    
+    font-style: var(--font-primary);
+    color: #a2b0b3;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.guide-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+
+    margin-top: 38px;
+}
+
+
+.guide-card {
+    height: 213px;
+
+    background: #ffffff;
+
+    border-radius: 11px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    box-shadow:
+        0 15px 40px rgba(17, 39, 43, 0.06);
+
+    transition: transform 0.2s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ACTIVE CARD */
+
+.guide-card.active {
+    background: #ff593f;
+    color: #ffffff;
+
+    box-shadow: none;
+}
+
+
+/* ---------- ICON ---------- */
+
+.guide-icon {
+    position: relative;
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+
+    background: #fbe2de;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ff593f;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+.guide-card.active .guide-icon {
+    background: rgba(255, 255, 255, 0.17);
+    color: #ffffff;
+}
+
+.guide-icon span {
+    position: absolute;
+
+    right: 9px;
+    bottom: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* ---------- CARD TEXT ---------- */
+
+.guide-card h3 {
+    margin: 0;
+
+    font-style: var(--font-primary);
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+.guide-card p {
+    margin-top: 12px;
+
+    color: #92a3a7;
+
+    font-size: 9.5px;
+    line-height: 1.9;
+}
+
+.guide-card.active p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* =========================================
+   DREAM LIVING SECTION
+========================================= */
+
+.living-section {
+    background: #ffffff;
+
+    padding: 30px 0 80px;
+}
+
+.living-container {
+    width: min(730px, calc(100% - 40px));
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 350px 1fr;
+
+    column-gap: 43px;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.living-image-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 400px;
+}
+
+
+/* GREY PLACEHOLDER */
+
+.living-image {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 309px;
+    height: 330px;
+
+    
+}
+.living-image .img2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 13%;
+    bottom: 22%;
+}
+
+
+.living-image .img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   RATING
+========================================= */
+
+.rating-card {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 75px;
+    height: 75px;
+
+    background: #062126;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.rating-card i {
+    color: #ff593f;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.rating-card span {
+    font-size: 7px;
+}
+
+
+/* =========================================
+   LIVING CONTENT
+========================================= */
+
+.living-content {
+    padding-top: 0;
+}
+
+.living-content h2 {
+    margin: 0;
+
+    color: #092126;
+
+    font-size: 29px;
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    letter-spacing: -0.7px;
+}
+
+.living-description {
+    margin-top: 18px;
+
+    color: #98a8ab;
+
+    font-size: 9px;
+    line-height: 1.8;
+
+    max-width: 275px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.living-feature {
+    min-height: 70px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 13px;
+
+    padding: 11px 8px;
+
+    margin-top: 8px;
+
+    border-radius: 3px;
+}
+
+
+/* ACTIVE / HIGHLIGHTED FEATURE */
+
+.living-feature.selected {
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 30px rgba(20, 40, 45, 0.06);
+}
+
+
+/* FEATURE ICON */
+
+.feature-icon {
+    flex: 0 0 28px;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ff593f;
+
+    font-size: 25px;
+}
+
+
+/* FEATURE TEXT */
+
+.living-feature h3 {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #092126;
+}
+
+.living-feature p {
+    margin-top: 6px;
+
+    font-size: 8.5px;
+    line-height: 1.7;
+
+    color: #98a8ab;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .section-container,
+    .living-container {
+        width: min(650px, calc(100% - 40px));
+    }
+
+    .guide-cards {
+        gap: 15px;
+    }
+
+    .living-container {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+
+    .living-image-wrapper {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .living-content {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .guides-section {
+        padding-top: 55px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .guide-cards {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .guide-card {
+        height: 200px;
+    }
+
+    .living-section {
+        padding-top: 20px;
+    }
+
+    .living-container {
+        width: calc(100% - 40px);
+    }
+
+    .living-image-wrapper {
+        transform: scale(0.9);
+        transform-origin: center;
+    }
+
+    .living-content h2 {
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .living-image-wrapper {
+        transform: scale(0.8);
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+
+    .living-content h2 {
+        font-size: 24px;
+    }
+}

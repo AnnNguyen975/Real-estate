@@ -1,0 +1,344 @@
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-section {
+    width: 100%;
+    background: #ffffff;
+
+    padding: 75px 20px 80px;
+}
+
+
+.contact-container {
+    width: min(730px, 100%);
+    margin: 0 auto;
+}
+
+
+/* ================= HEADING ================= */
+
+.contact-heading {
+    text-align: center;
+}
+
+
+.contact-heading > span {
+    display: block;
+
+    color: #ff593f;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 12px;
+}
+
+
+.contact-heading h2 {
+    margin: 0;
+
+    color: #1c202b;
+
+    font-size: 29px;
+    line-height: 1.2;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   CONTACT LAYOUT
+===================================================== */
+
+.contact-layout {
+    display: grid;
+
+    grid-template-columns: 1fr 310px;
+
+    gap: 60px;
+
+    margin-top: 45px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   LEFT SIDE
+===================================================== */
+
+.contact-left {
+    min-width: 0;
+}
+
+
+.contact-description {
+    width: 230px;
+
+    margin: 0;
+
+    color: #929292;
+
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+
+/* ================= BENEFITS ================= */
+
+.contact-benefits {
+    list-style: none;
+
+    padding: 0;
+    margin: 22px 0 0;
+}
+
+
+.contact-benefits li {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+
+    color: #272727;
+
+    font-size: 9px;
+}
+
+
+.contact-benefits li span {
+    color: #ff593f;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   CONTACT IMAGE
+===================================================== */
+
+.contact-image-wrapper {
+    position: relative;
+
+    width: 360px;
+    height: 210px;
+
+    margin-top: 35px;
+}
+
+
+.contact-image {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 175px;
+    height: 128px;
+
+    background: #c5c5c5;
+
+    border-radius: 5px;
+
+    z-index: 2;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./images/House4.png);
+}
+
+
+/*
+    second part of the image shape
+*/
+
+.contact-image::after {
+    content: "";
+
+    position: absolute;
+
+    left: 86px;
+    top: 40px;
+
+    width: 270px;
+    height: 150px;
+
+    background: #c5c5c5;
+
+    border-radius: 4px;
+
+    z-index: -1;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./images/browse.png);
+}
+
+
+/* ORANGE DECORATION */
+
+.contact-shape-orange {
+    position: absolute;
+
+    top: -23px;
+    left: 198px;
+
+    width: 47px;
+    height: 45px;
+
+    background: #ff593f;
+
+    border-radius: 5px;
+
+    z-index: 3;
+}
+
+
+/* DARK DECORATION */
+
+.contact-shape-dark {
+    position: absolute;
+
+    top: -30px;
+    left: 229px;
+
+    width: 21px;
+    height: 21px;
+
+    background: #272727;
+
+    border-radius: 5px;
+
+    z-index: 4;
+}
+
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+.contact-form-wrapper {
+    background: #f2f6f7;
+
+    border-radius: 5px;
+
+    padding: 30px 25px 25px;
+
+    min-height: 405px;
+}
+
+
+.contact-form-wrapper h3 {
+    margin: 0 0 30px;
+
+    color: #272727;
+
+    font-size: 29px;
+
+    font-weight: 600;
+}
+
+
+/* FORM */
+
+.contact-form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+
+.form-group label {
+    margin-bottom: 8px;
+
+    color: #747474;
+
+    font-size: 9px;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: #ffffff;
+
+    border-radius: 5px;
+
+    color: #333333;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    padding: 0 12px;
+}
+
+
+.form-group input {
+    height: 35px;
+}
+
+
+.form-group textarea {
+    height: 75px;
+
+    padding-top: 12px;
+
+    resize: none;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #b1b1b1;
+}
+
+
+/* SEND */
+
+.send-btn {
+    width: 80px;
+    height: 34px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #ff593f;
+
+    color: #ffffff;
+
+    font-size: 8px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.send-btn:hover {
+    background: #e94c35;
+}

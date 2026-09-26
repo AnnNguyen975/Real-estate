@@ -1,0 +1,52 @@
+/* =========================================
+   TOP BAR
+========================================= */
+
+.top-bar {
+    height: 31px;
+    background: #071c1f;
+    color: #ffffff;
+    font-size: 9px;
+}
+
+.top-container {
+    width: min(1000px, calc(100% - 40px));
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.contact-info span {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.contact-info i {
+    color: #ff593f;
+    font-size: 9px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    font-size: 9px;
+    transition: 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #ff593f;
+}
