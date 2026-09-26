@@ -22,20 +22,16 @@
 
 .testimonial-heading h2 {
     margin: 0;
-
     font-size: 27px;
     line-height: 1.2;
-
     font-weight: 600;
     color: #092126;
 }
 
 .testimonial-heading p {
     margin-top: 14px;
-
     font-size: 8px;
     line-height: 1.7;
-
     color: #9aa9ac;
 }
 
@@ -44,15 +40,11 @@
 
 .testimonial-content {
     position: relative;
-
     display: grid;
     grid-template-columns: 260px 1fr;
-
     gap: 50px;
     align-items: center;
-
     margin-top: 45px;
-
     min-height: 250px;
 }
 
@@ -61,46 +53,34 @@
 
 .testimonial-image-wrapper {
     position: relative;
-
     width: 230px;
     height: 230px;
-
     margin-left: 25px;
 }
 
 .testimonial-back {
     position: absolute;
-
     left: 0;
     bottom: 0;
-
     width: 190px;
     height: 215px;
-
     background: #ff593f;
-
     border-radius: 6px;
 }
 
 .testimonial-image {
     position: absolute;
-
     left: 18px;
     top: 0;
-
     width: 200px;
     height: 200px;
-
     background: #c5c5c5;
-
     border-radius: 5px;
-
     overflow: hidden;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     background-image: url("../images/customer.png");
 }
 
@@ -113,52 +93,37 @@
 
 .quote {
     color: #ff9b8d;
-
     font-family: Georgia, serif;
-
     font-size: 40px;
-
     height: 35px;
-
     line-height: 1;
 }
 
 .testimonial-text > p {
     margin: 8px 0 0;
-
     font-size: 9px;
     line-height: 2;
-
     color: #304044;
 }
 
 .stars {
     margin-top: 10px;
-
     color: #ffbd00;
-
     font-size: 11px;
-
     letter-spacing: 2px;
 }
 
 .testimonial-text h3 {
     margin: 14px 0 0;
-
     color: #092126;
-
     font-size: 11px;
-
     font-weight: 600;
 }
 
 .testimonial-text > span {
     display: block;
-
     margin-top: 5px;
-
     color: #a2adaf;
-
     font-size: 7px;
 }
 
@@ -167,14 +132,10 @@
 
 .testimonial-arrow {
     position: absolute;
-
     top: 50%;
-
     width: 33px;
     height: 33px;
-
     border-radius: 50%;
-
     cursor: pointer;
 
     display: flex;
@@ -186,27 +147,21 @@
 
 .left-arrow {
     left: -35px;
-
     border: 1px solid #ff593f;
-
     color: #ff593f;
-
     background: #ffffff;
 }
 
 .right-arrow {
     right: -25px;
-
     border: none;
-
     background: #ff593f;
-
     color: #ffffff;
 }
 
 
 /* =====================================================
-   TABLET
+   TESTIMONIAL - TABLET
 ===================================================== */
 
 @media (max-width: 768px) {
@@ -236,7 +191,7 @@
 
 
 /* =====================================================
-   MOBILE
+   TESTIMONIAL - MOBILE
 ===================================================== */
 
 @media (max-width: 500px) {
@@ -247,9 +202,7 @@
 
     .testimonial-content {
         grid-template-columns: 1fr;
-
         justify-items: center;
-
         gap: 35px;
     }
 
@@ -271,6 +224,8 @@
         top: 100px;
     }
 }
+
+
 /* =====================================================
    PROJECTS / SUCCESSFUL PROJECTS
 ===================================================== */
@@ -295,12 +250,9 @@
 
 .projects-heading h2 {
     margin: 0;
-
     color: #092126;
-
     font-size: 27px;
     line-height: 1.25;
-
     font-weight: 600;
 }
 
@@ -309,11 +261,8 @@
 
 .project-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
-
     margin-top: 35px;
 }
 
@@ -322,15 +271,11 @@
 
 .project-card {
     height: 105px;
-
     background: #999999;
-
     border-radius: 5px;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
 
@@ -359,11 +304,8 @@
 
 .project-card h3 {
     margin: 0;
-
     color: #ffffff;
-
     font-size: 9px;
-
     font-weight: 400;
 }
 
@@ -372,23 +314,17 @@
 
 .project-card a {
     display: inline-flex;
-
     align-items: center;
-
     gap: 10px;
 
     margin-top: 18px;
-
     padding: 9px 17px;
 
     background: #ffffff;
-
     border-radius: 4px;
 
     color: #ff593f;
-
     font-size: 7px;
-
     text-decoration: none;
 }
 
@@ -398,7 +334,7 @@
 
 
 /* =====================================================
-   TABLET
+   PROJECTS - TABLET
 ===================================================== */
 
 @media (max-width: 768px) {
@@ -414,7 +350,7 @@
 
 
 /* =====================================================
-   MOBILE
+   PROJECTS - MOBILE
 ===================================================== */
 
 @media (max-width: 500px) {
@@ -425,173 +361,7 @@
 
     .project-grid {
         grid-template-columns: 1fr;
-
         max-width: 300px;
-
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .project-card {
-        height: 120px;
-    }
-}/* =====================================================
-   PROJECTS / SUCCESSFUL PROJECTS
-===================================================== */
-
-.projects-section {
-    width: 100%;
-    background: #ffffff;
-    padding: 50px 20px 70px;
-}
-
-.projects-container {
-    width: min(730px, 100%);
-    margin: 0 auto;
-}
-
-
-/* ================= HEADING ================= */
-
-.projects-heading {
-    text-align: center;
-}
-
-.projects-heading h2 {
-    margin: 0;
-
-    color: #092126;
-
-    font-size: 27px;
-    line-height: 1.25;
-
-    font-weight: 600;
-}
-
-
-/* ================= PROJECT GRID ================= */
-
-.project-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-
-    margin-top: 35px;
-}
-
-
-/* ================= PROJECT CARD ================= */
-
-.project-card {
-    height: 105px;
-
-    background: #999999;
-
-    border-radius: 5px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-/* ================= PROJECT IMAGES ================= */
-
-.washington {
-    background-image: url("../images/washington-dc.png");
-}
-
-.san-francisco {
-    background-image: url("../images/san-francisco.png");
-}
-
-.chicago {
-    background-image: url("../images/chicago.png");
-}
-
-
-/* ================= PROJECT TITLE ================= */
-
-.project-card h3 {
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: 9px;
-
-    font-weight: 400;
-}
-
-
-/* ================= VIEW PROPERTY BUTTON ================= */
-
-.project-card a {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    margin-top: 18px;
-
-    padding: 9px 17px;
-
-    background: #ffffff;
-
-    border-radius: 4px;
-
-    color: #ff593f;
-
-    font-size: 7px;
-
-    text-decoration: none;
-}
-
-.project-card a span {
-    font-size: 11px;
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 768px) {
-
-    .projects-container {
-        width: min(600px, 100%);
-    }
-
-    .project-grid {
-        gap: 12px;
-    }
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 500px) {
-
-    .projects-heading h2 {
-        font-size: 23px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-
-        max-width: 300px;
-
         margin-left: auto;
         margin-right: auto;
     }
@@ -600,500 +370,8 @@
         height: 120px;
     }
 }
-/* =====================================================
-   PROJECTS / SUCCESSFUL PROJECTS
-===================================================== */
 
-.projects-section {
-    width: 100%;
-    background: #ffffff;
-    padding: 50px 20px 70px;
-}
 
-.projects-container {
-    width: min(730px, 100%);
-    margin: 0 auto;
-}
-
-
-/* ================= HEADING ================= */
-
-.projects-heading {
-    text-align: center;
-}
-
-.projects-heading h2 {
-    margin: 0;
-
-    color: #092126;
-
-    font-size: 27px;
-    line-height: 1.25;
-
-    font-weight: 600;
-}
-
-
-/* ================= PROJECT GRID ================= */
-
-.project-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-
-    margin-top: 35px;
-}
-
-
-/* ================= PROJECT CARD ================= */
-
-.project-card {
-    height: 105px;
-
-    background: #999999;
-
-    border-radius: 5px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-/* ================= PROJECT IMAGES ================= */
-
-.washington {
-    background-image: url("../images/washington-dc.png");
-}
-
-.san-francisco {
-    background-image: url("../images/san-francisco.png");
-}
-
-.chicago {
-    background-image: url("../images/chicago.png");
-}
-
-
-/* ================= PROJECT TITLE ================= */
-
-.project-card h3 {
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: 9px;
-
-    font-weight: 400;
-}
-
-
-/* ================= VIEW PROPERTY BUTTON ================= */
-
-.project-card a {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    margin-top: 18px;
-
-    padding: 9px 17px;
-
-    background: #ffffff;
-
-    border-radius: 4px;
-
-    color: #ff593f;
-
-    font-size: 7px;
-
-    text-decoration: none;
-}
-
-.project-card a span {
-    font-size: 11px;
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 768px) {
-
-    .projects-container {
-        width: min(600px, 100%);
-    }
-
-    .project-grid {
-        gap: 12px;
-    }
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 500px) {
-
-    .projects-heading h2 {
-        font-size: 23px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-
-        max-width: 300px;
-
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .project-card {
-        height: 120px;
-    }
-}/* =====================================================
-   PROJECTS / SUCCESSFUL PROJECTS
-===================================================== */
-
-.projects-section {
-    width: 100%;
-    background: #ffffff;
-    padding: 50px 20px 70px;
-}
-
-.projects-container {
-    width: min(730px, 100%);
-    margin: 0 auto;
-}
-
-
-/* ================= HEADING ================= */
-
-.projects-heading {
-    text-align: center;
-}
-
-.projects-heading h2 {
-    margin: 0;
-
-    color: #092126;
-
-    font-size: 27px;
-    line-height: 1.25;
-
-    font-weight: 600;
-}
-
-
-/* ================= PROJECT GRID ================= */
-
-.project-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-
-    margin-top: 35px;
-}
-
-
-/* ================= PROJECT CARD ================= */
-
-.project-card {
-    height: 105px;
-
-    background: #999999;
-
-    border-radius: 5px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-/* ================= PROJECT IMAGES ================= */
-
-.washington {
-    background-image: url("../images/washington-dc.png");
-}
-
-.san-francisco {
-    background-image: url("../images/san-francisco.png");
-}
-
-.chicago {
-    background-image: url("../images/chicago.png");
-}
-
-
-/* ================= PROJECT TITLE ================= */
-
-.project-card h3 {
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: 9px;
-
-    font-weight: 400;
-}
-
-
-/* ================= VIEW PROPERTY BUTTON ================= */
-
-.project-card a {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    margin-top: 18px;
-
-    padding: 9px 17px;
-
-    background: #ffffff;
-
-    border-radius: 4px;
-
-    color: #ff593f;
-
-    font-size: 7px;
-
-    text-decoration: none;
-}
-
-.project-card a span {
-    font-size: 11px;
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 768px) {
-
-    .projects-container {
-        width: min(600px, 100%);
-    }
-
-    .project-grid {
-        gap: 12px;
-    }
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 500px) {
-
-    .projects-heading h2 {
-        font-size: 23px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-
-        max-width: 300px;
-
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .project-card {
-        height: 120px;
-    }
-}
-/* =====================================================
-   PROJECTS / SUCCESSFUL PROJECTS
-===================================================== */
-
-.projects-section {
-    width: 100%;
-    background: #ffffff;
-    padding: 50px 20px 70px;
-}
-
-.projects-container {
-    width: min(730px, 100%);
-    margin: 0 auto;
-}
-
-
-/* ================= HEADING ================= */
-
-.projects-heading {
-    text-align: center;
-}
-
-.projects-heading h2 {
-    margin: 0;
-
-    color: #092126;
-
-    font-size: 27px;
-    line-height: 1.25;
-
-    font-weight: 600;
-}
-
-
-/* ================= PROJECT GRID ================= */
-
-.project-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-
-    margin-top: 35px;
-}
-
-
-/* ================= PROJECT CARD ================= */
-
-.project-card {
-    height: 105px;
-
-    background: #999999;
-
-    border-radius: 5px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-/* ================= PROJECT IMAGES ================= */
-
-.washington {
-    background-image: url("../images/washington-dc.png");
-}
-
-.san-francisco {
-    background-image: url("../images/san-francisco.png");
-}
-
-.chicago {
-    background-image: url("../images/chicago.png");
-}
-
-
-/* ================= PROJECT TITLE ================= */
-
-.project-card h3 {
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: 9px;
-
-    font-weight: 400;
-}
-
-
-/* ================= VIEW PROPERTY BUTTON ================= */
-
-.project-card a {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    margin-top: 18px;
-
-    padding: 9px 17px;
-
-    background: #ffffff;
-
-    border-radius: 4px;
-
-    color: #ff593f;
-
-    font-size: 7px;
-
-    text-decoration: none;
-}
-
-.project-card a span {
-    font-size: 11px;
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 768px) {
-
-    .projects-container {
-        width: min(600px, 100%);
-    }
-
-    .project-grid {
-        gap: 12px;
-    }
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 500px) {
-
-    .projects-heading h2 {
-        font-size: 23px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-
-        max-width: 300px;
-
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .project-card {
-        height: 120px;
-    }
-}
 /* =====================================================
    NEWSLETTER / ENTER EMAIL
 ===================================================== */
@@ -1103,11 +381,9 @@
     height: 47px;
 
     margin: 38px auto 0;
-
     padding: 5px;
 
     background: #f7f7f7;
-
     border-radius: 8px;
 
     display: flex;
@@ -1119,31 +395,23 @@
 
 .email-field {
     flex: 1;
-
     display: flex;
     align-items: center;
-
     padding-left: 12px;
 }
 
 .email-field span {
     margin-right: 9px;
-
     color: #7f8c8f;
-
     font-size: 9px;
 }
 
 .email-field input {
     width: 100%;
-
     border: none;
     outline: none;
-
     background: transparent;
-
     color: #526164;
-
     font-size: 8px;
 }
 
@@ -1156,25 +424,21 @@
 
 .newsletter button {
     height: 35px;
-
     padding: 0 17px;
 
     border: none;
-
     border-radius: 5px;
 
     background: #ff593f;
-
     color: #ffffff;
 
     font-size: 8px;
-
     cursor: pointer;
 }
 
 
 /* =====================================================
-   MOBILE
+   NEWSLETTER - MOBILE
 ===================================================== */
 
 @media (max-width: 500px) {

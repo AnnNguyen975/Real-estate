@@ -84,13 +84,13 @@
     background-repeat: no-repeat;
 }
 .img-1 {
-    background-image: url("./images/blog1.png");
+    background-image: url("../images/blog1.png");
 }
 .img-2 {
-    background-image: url("./images/blog2.png");
+    background-image: url("../images/blog2.png");
 }
 .img-3 {
-    background-image: url("./images/blog3.png");
+    background-image: url("../images/blog3.png");
 }
 
 
